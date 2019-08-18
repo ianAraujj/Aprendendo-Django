@@ -17,3 +17,6 @@ class Cursos(models.Model):
     modify = models.DateTimeField('Data de Modificação', auto_now=True)
 
     objects = CursosManager()
+
+    def __str__(self):
+        return self.name
